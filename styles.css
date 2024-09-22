@@ -1,0 +1,285 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+/************************************************* Navbar ****************************************************/
+
+.navbar {
+    background-color: #000000; /* Dark background color */
+}
+
+.navbar-brand, .nav-link {
+    color: #ffffff !important; /* White text color */
+}
+
+.nav-link:hover {
+    color:rgb(242, 146, 30) !important; /* Light grey on hover */
+}
+
+.nav-item{
+    padding: 15px;
+    font-size: medium;
+    font-weight: 500;
+}
+
+
+/************************************************* Home ****************************************************/
+
+.home-section {
+    padding: 170px;
+    margin: 120px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 black;
+    color: white;
+    background: url("img/home.jpg");
+    height: auto;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/************************************************* About ****************************************************/
+
+
+.about-container {
+    padding-top: 85px;
+}
+
+.about-logo img {
+    height: 80vh;
+    width: 65ch;
+}
+
+.about-right {
+    font-size: 1.1rem; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+
+/************************************************* Projects ****************************************************/
+
+.projects-section {
+    text-align: center;
+    margin: 40px 0;
+    padding-top: 85px;
+}
+
+.projects-section h3{
+    padding: 25px;
+}
+
+
+
+.projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    border: 2px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px);
+}
+
+.project-card img {
+    width: 100%;
+    height: 200px; /* Adjust height as needed */
+    object-fit: cover;
+}
+
+.project-info {
+    padding: 20px;
+}
+
+.project-info h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.project-info p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.project-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.project-button:hover {
+    background-color: #45a049;
+}
+
+
+/************************************************* Skills ****************************************************/
+
+
+.skills-section {
+    text-align: center;
+    padding-top: 85px;
+}
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.skill {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 30px;
+    margin: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out, margin-left 0.3s ease-in-out;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+}
+
+.skill img {
+    width: 30px; /* Adjust size as needed */
+    height: 30px; /* Adjust size as needed */
+    margin-right: 10px; /* Space between image and text */
+    transition: transform 0.3s ease-in-out;
+}
+
+.skill span {
+    font-size: 18px; /* Adjust text size as needed */
+}
+
+.skill:hover {
+    transform: translateX(-30px);
+}
+
+.skill:hover img {
+    transform: scale(1.2); /* Slightly enlarges the image on hover */
+}
+
+
+
+/************************************************* Footer ****************************************************/
+.footer {
+    background-color:black;
+    color: white;
+    text-align: center;
+    display: block;
+    flex-direction: row;
+  }
+  
+footer.footer {
+    background-color: #000000;
+    color: #fff;
+    padding: 40px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.footer-left, .footer-right {
+    flex: 1;
+    margin: 10px;
+}
+ 
+.footer-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+.footer-left img {
+    width: 61%;
+    border: 2px solid white;
+}
+
+.footer-right form {
+    background-color: #444;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.footer-right .form-group {
+    margin-bottom: 15px;
+}
+
+.footer-right label {
+    display: block;
+    margin-bottom: 5px;
+    color: #fff;
+}
+
+.footer-right input[type="text"],
+.footer-right input[type="email"],
+.footer-right textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #555;
+    border-radius: 5px;
+    box-sizing: border-box;
+    font-size: 16px;
+    background-color: #555;
+    color: #fff;
+}
+
+.footer-right textarea {
+    resize: vertical;
+}
+
+.send-button {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.send-button:hover {
+    background-color: #45a049;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-left, .footer-right {
+        margin: 10px 0;
+    }
+}
+
